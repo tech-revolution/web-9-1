@@ -1,0 +1,125 @@
+h1{
+    /* color: blue; */
+    /* background-color: rgb(125, 233, 12, 0.4); */
+    /* background-color: #9c26097a; */
+    background-color: hsla(253, 44%, 66%, 0.473);
+}
+.container{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    /* background-color: blueviolet; */
+    /* border: 10px inset red; */
+    /* border-style: solid dotted groove double;
+    border-color: red;
+    border-width: 10px;
+    margin: 25px; */
+    background-color: rebeccapurple;
+    border-radius: 20px 30px 10px 0px;
+    text-align: center;
+    /* vertical-align: middle; */
+    position: relative;
+    
+    
+    
+}
+.container h4{
+    border: 1px solid;
+    margin: 30px 10px 0px 10px;
+    padding: 20px;
+
+}
+.container a {
+    color: yellow;
+    padding: 20px;
+    border: 1px solid;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    
+}
+/* body{ */
+    /* background-image: url("bg.jpg"); */
+    /* background-image: url("bg.jpg"); */
+    /* background-image: url("logo.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: bottom right; */
+    /* background-attachment: scroll; */
+
+/* } */
+
+.btn{
+    margin: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: aqua;
+    border-radius: 13px;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.438);
+}
+.btn:hover{
+    background-color: aqua;
+    color: brown;
+    border: 1px solid;
+    font-size: 10px;
+}
+ul, ol{
+    list-style-type: none;
+}
+.para{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    overflow: auto;
+}
+table{
+    border-collapse: collapse;
+    
+}
+.table{
+    overflow: auto;
+    width: 100%;
+}
+th, td{
+    /* border: 1px solid; */
+    padding: 10px;
+    text-align: center;
+    /* border-left: 1px solid; */
+}
+th{
+    background-color: aqua;
+}
+tr:nth-child(even){
+    background-color: chocolate;
+}
+.para2{
+    width: 400px;
+    border: 1px solid;
+    margin: auto;
+}
+.para3{
+    max-width: 400px;
+    border: 1px solid;
+    margin: auto;
+}
+.position{
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+   
+    background-color: red;
+}
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+
+}

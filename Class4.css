@@ -1,0 +1,64 @@
+h1{
+    color: aqua;
+}
+/* .cls{
+    text-align: center;
+} */
+/* .cls p{
+    color: red;
+} */
+/* Child Selector */
+/* .cls > p{
+    color: blue;
+} */
+
+/* Adjacent Sibling Selector */
+/* h1+p{
+    color: red;
+} */
+/* General Sibling Selcetors */
+
+
+/* Pseudo Class Selector */
+/* a:hover{
+    color: red;
+    font-size: 30px;
+    background-color: yellow;
+    text-decoration: none;
+}
+a:active{
+    color: brown;
+}
+a:visited{
+    color: aqua;
+}
+.para::first-line{
+    color: red;
+} */
+.para:first-letter{
+    color: red;
+    font-size: 30px;
+}
+p:first-child{
+    color: blue;
+}
+
+/* a::before{
+    content: url(Facebook.png);
+}
+a::after{
+    content: url(Facebook.png);
+} */
+/* ::marker{
+    color: blue;
+} */
+::selection{
+    color: red;
+    background-color: yellow;
+}
+input[type="text"]{
+    border: 1px solid red;
+}
+input[type="email"]{
+    background-color: aqua;
+}

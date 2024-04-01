@@ -1,0 +1,233 @@
+:root{
+    --primary-color:#f3ef10c7;
+    --secondary-color: #101727;
+    --bg-dark-blue: #0d1424;
+    --bg-white:#fff;
+    --gray-color:#c1c2c9bf;
+    --primary-text:#a32b3f;
+    --text-gray:#c1c2c9bf;
+    --text-white:#fff;
+    --primary-font:'Poppins', sans-serif;
+}
+body{
+    font-family: var(--primary-font);
+    background: var(--secondary-color);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-dark-blue);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+
+section{
+    padding: 50px 0;
+}
+/* Navbar CSS Start */
+
+.main-btn{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 26px;
+    transition: all .4s ease-in-out;
+    background-color: transparent;
+    color: var(--text-gray);
+    border: 2px solid var(--text-gray);
+    font-weight: 500px;
+    font-size:14px ;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.main-btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-white);
+}
+h1{
+    font-size: 55px;
+    line-height: 68px;
+    font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 20px;
+
+}
+h1 span{
+    color: var(--primary-color);
+
+}
+h2{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 18px;
+}
+
+h6{
+    color: var(--text-gray);
+    font-size: 15px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+.subtitle{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input:hover, input:focus, textarea:hover,textarea:focus, button{
+    outline: none;
+    box-shadow: none;
+}
+
+.header_wrapper .navbar{
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header_wrapper .navbar-brand img{
+    max-width: 120px;
+    height: auto;
+}
+
+.header_wrapper .navbar-toggler{
+    border: 0;
+    color: var(--gray-color);
+    line-height: 2px;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 10px;
+}
+
+.header_wrapper .nav-item .nav-link{
+    position: relative;
+    font-size: 16px;
+    color: var(--text-gray);
+    font-weight: 500;
+    display: inline-block;
+}
+.header_wrapper .nav-item .nav-link::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    transition: .3s;
+}
+.header_wrapper .nav-item .nav-link:active:after,
+.header_wrapper .nav-item .nav-link:hover:after{
+    width: 100%;
+}
+.header_wrapper .nav-item .nav-link:active,
+.header_wrapper .nav-item .nav-link:hover{
+    color: var(--text-white);
+}
+
+.header_scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark-blue);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,45,.5);
+    box-shadow: 0 4px 6px 0 rgba(12,0,45,.5);;
+}
+.header_scrolled .nav-item .nav-link:active,
+.header_scrolled .nav-item .nav-link:hover{
+    color: var(--primary-text);
+}
+
+
+
+/* Navbar CSS End */
+
+
+/* Banner CSS Start */
+.banner_wrapper{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    max-height:650px;
+    padding: 200px 0 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    section{
+        padding: 30px 0;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .header_wrapper .navbar-collapse{
+        background-color: var(--bg-dark-blue);
+        text-align: center;
+        padding-bottom:15px ;
+    }
+}
+
+@media (max-width:767px){
+    
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+

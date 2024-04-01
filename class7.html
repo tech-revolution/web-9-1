@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        /* #div1{
+            margin: 100px;
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            background-color: rgba(6, 70, 107, 0.521);
+            perspective: 200px;
+
+        }
+        #div2{
+            position: absolute;
+            border: 1px solid;
+            padding: 50px;
+            background-color: rgba(100, 100, 100, 0.5);
+            transform-style: preserve-3d;
+            transform: rotateX(45deg);
+
+        } */
+        /* #div1{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            padding: 10px;
+        }
+        #div2{
+            position: absolute;
+            padding: 50px;
+            background-color: red;
+            transform: rotateY(60deg);
+            transform-style: preserve-3d;
+            
+        }
+        #div3{
+            position: absolute;
+            padding: 40px;
+            background-color: yellowgreen;
+            transform: rotateY(-60deg);
+        } */
+        /* .container{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            transition: all 3s;
+            transition-delay: 2s;
+
+        } */
+        /* .container:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        } */
+        body{
+            background-color: rgb(17, 6, 87);
+        }
+        button{
+            margin: 30px;
+        }
+        .custom-btn{
+            color: #fff;
+            width: 130px;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+            transition: all 1s ease;
+        }
+
+        /* Button 1 Start */
+        .btn-1{
+            color: #fff352;
+            border: 1px solid #fff352;
+            box-shadow: 0 0 5px #fff352,  0 0 5px #fff352 inset;
+            overflow: hidden;
+            z-index: 2;
+            transition: all 1s ease;
+        }
+        .btn-1::after{
+            position: absolute;
+            content: " ";
+            z-index: -1;
+            transition: all 1s ease;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .btn-1:hover{
+            color: black;
+        }
+        .btn-1:hover:after{
+            background-color: #fff352;
+            transform: scale(2) rotate(180deg);
+        }
+
+        /* Button 2 Start */
+        .btn-2{
+            background: #21ebff;
+            border: none;
+            /* line-height: 42px; */
+            padding: 0;
+            
+        }
+        .btn-2:hover{
+            background: transparent;
+            color: #21ebff;
+            
+        }
+        .btn-2:before, .btn-2:after{
+            content: " ";
+            top: 0;
+            right: 0;
+            height: 2px;
+            background: #21ebff;
+            position: absolute;
+            width: 0;
+            box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+            transition: all 1s ease;
+        }
+        .btn-2:after{
+            right: inherit;
+            top:inherit;
+            left: 0;
+            bottom: 0;
+        }
+        .btn-2:hover:before, .btn-2:hover:after{
+            width: 100%;
+            transition: 3s ease all;
+
+        }
+
+    </style>
+</head>
+<body>
+    <button class="custom-btn btn-1">Login</button>
+    <button class="custom-btn btn-2">Login</button>
+    <!-- <h1>Hello World</h1> -->
+    <!-- <div class="container"></div> -->
+    <!-- <button onclick="pres()">Click</button> -->
+    <!-- <div id="div1">
+        div1
+        <div id="div2">Div2
+            <div id="div3">Div3</div>
+        </div>
+    </div> -->
+
+    <!-- <script>
+        function pres(){
+            document.getElementById("div1").style.perspective = "100px"
+        }
+    </script> -->
+</body>
+</html>

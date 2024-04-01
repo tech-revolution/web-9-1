@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        /* @media only screen and (max-width:900px){
+            body{
+                background-color: crimson;
+            }
+        }
+
+        @media only screen and (max-width:600px){
+            body{
+                background-color: burlywood;
+            }
+        } */
+        /* @media only screen and (max-width:900px) and (min-width:600px){
+            div.sample{
+                font-size: 40px;
+                padding: 30px;
+                border: 5px solid;
+                background: red;
+                color: white;
+            }
+        } */
+        /* .sample{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+
+        }
+        @media only screen and (max-width:400px){
+            div.sample{
+                display: none;
+            }
+        } */
+        /* .sample{
+            overflow: hidden;
+            background-color: green;
+            
+        }
+        .sample a{
+            display: block;
+            float: left;
+            padding: 16px 18px;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        @media only screen and (max-width:500px){
+            .sample a{
+                float: none;
+                width: 100%;
+            }
+        } */
+        *{
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+        }
+        .col{
+            /* float: left; */
+            /* width: 25%; */
+            flex: 25%;
+            padding: 20px;
+            border: 1px solid;
+        }
+        @media only screen and (max-width:900px){
+            .col{
+                flex: 50%;
+            }
+        }
+        @media only screen and (max-width:500px){
+            .row{
+                /* flex: 100%; */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempora voluptates, omnis ipsam amet provident deserunt harum? Aut aperiam eum atque neque eaque, sint reprehenderit, debitis dolorum, sit porro saepe.</p>
+    <!-- <div class="sample">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div> -->
+    <div class="row">
+        <div class="col">
+            <h3>Box 1</h3>
+        </div>
+        <div class="col">
+            <h3>Box 2</h3>
+        </div>
+        <div class="col">
+            <h3>Box 3</h3>
+        </div>
+        <div class="col">
+            <h3>Box 4</h3>
+        </div>
+    </div>
+</body>
+</html>

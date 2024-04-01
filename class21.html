@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Nested loops in JS</h1>
+    <p id="para"></p>
+    
+
+
+
+    <script>
+        // for(let i=1; i<=5;i++){
+        //     // console.log("Hello");
+        //     for(let j=1; j<=5;j++){
+        //         console.log(i,j)
+        //     }
+        // }
+        // let size=7;
+        // let row = "";
+        // for(let i=0; i<size;i++){
+            
+        //     for(let j=0; j<i; j++){
+        //         row += j +" " ;
+        //     }
+        //     row +="\n";
+        // }
+        // console.log(row);
+        let size=7;
+        let row = "";
+        for(let i=0; i<size;i++){
+            
+            for(let j=size; j>i; j--){
+                row += "  " ;
+            }
+            
+            for(let k=0; k<=i; k++){
+                row += "* " ;
+            }
+            row +="\n";
+        }
+        console.log(row);
+
+    </script>
+</body>
+</html>

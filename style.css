@@ -1,0 +1,14 @@
+.container{
+    border: 5px solid;
+}
+.size{
+    height: 50px;
+    width: 50px;
+    background-color: cadetblue;
+}
+.row{
+    border: 5px solid red;
+}
+.col, .col-3{
+    border: 5px solid blue;
+}

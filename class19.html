@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops in JavaScript</h1>
+    <div id="test"></div>
+
+
+    <script>
+        const fname = ["Ali", "Bilal", "Ahmad", "Hamza", "Nimra", "Anmol", "Hanan", "Haider"];
+        // console.log(fname);
+        // for(let i=0; i<=fname.length; i++){
+        //     console.log(`Value at index ${i} ${fname[i]}`);
+        // }
+        // for(let i=1; i<=30; i++){
+        //     console.log(i);
+        // }
+        // const person = {
+        //     fname: "Ali",
+        //     lname: "Haider",
+        //     age: 25
+        // }
+        let text = " ";
+            // for(let i in fname){
+            //     text += fname[i] + "<br>";
+            // }
+            // document.getElementById('test').innerHTML = text;
+
+            // for(let i in person){
+            //     console.log(i)
+            // }
+            // for(let i in fname){
+            //     console.log(i)
+            // }
+            // for (let i of fname){
+            //     console.log(i)
+            // }
+                fname.forEach(myfun)
+
+            function myfun(value){
+                text += value + "<br>";
+            }
+            document.getElementById('test').innerHTML = text;
+
+    </script>
+    
+</body>
+</html>
