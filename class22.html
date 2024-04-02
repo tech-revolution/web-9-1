@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <h1>Fibonacci Series</h1>
+    <!-- <button onclick="myFun()">Click me</button>
+    <p id="para"></p>
+
+    <button onclick="myFun()">Click Again</button> -->
+    <!-- <div id="div1"></div> -->
+    <label for="">Enter First Number</label><br><br>
+    <input type="number" name="" id="num1"> <br><br>
+    <label for="">Enter Second Number</label><br><br>
+    <input type="number" name="" id="num2">
+
+    <br><br>
+    <input type="button" value="+" id="opr" onclick="calc()">
+    <input type="button" value="-" id="opr" onclick="calc()">
+    <br>
+    <div id="para"></div>
+
+    <script>
+        // function myFun(){
+        //     document.getElementById("para").innerHTML = "Hello World";
+        // }
+        // function printName(a){
+        //     // console.log("Ali");
+        //     document.getElementById("para").innerHTML = a;
+        //     // return "Ali"
+        // }
+
+        // let a = printName()
+        // console.log(a)
+        // let fullName = prompt("Enter Your Name: ")
+        // let a = fullName
+        // printName(fullName);
+
+
+        // function add(a,b){
+        //     return a + b;
+        // }
+        // let result = add(5,7);
+        // console.log(result)
+        function calc(){
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            let opra = document.getElementById("opr").value;
+            
+
+            let res;
+
+            if (opra == '+'){
+                res = n1 + n2;
+            }else if(opra == '-'){ 
+                res = n1 - n2;
+            }else{
+                res = "Check"
+            }
+
+            document.getElementById("para").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
