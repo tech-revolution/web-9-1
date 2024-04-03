@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Function as Objects</h1>
+
+
+
+
+    <script>
+        console.log("Objects");
+        // const person = {
+        //     fname: "Ali",
+        //     lname: "Bilal"
+        //     // fullName: function(){
+        //     //     return this.fname + " " + this.lname;
+        //     // }
+        // }
+        // person.printName = function(){
+        //         return (this.fname + " " + this.lname).toUpperCase();
+        //     }
+        // // console.log(person.fullName())
+        // console.log(person.printName())
+        function myFun(fname, lname){
+            this.firstName = fname;
+            this.lastName = lname;
+        }
+
+        let obj1 = new myFun("Hanan ", "Bilal");
+        console.log(obj1.firstName)
+        let obj2 = new myFun("Ayesha ", "Muskan");
+        console.log(obj2.lastName)
+        // console.log(typeof obj2)
+        let obj3 = new myFun("Nida", "Anmol")
+        console.log(obj3.firstName)
+
+
+    </script>
+    
+</body>
+</html>
