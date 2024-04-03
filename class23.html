@@ -38,6 +38,26 @@
         let obj3 = new myFun("Nida", "Anmol")
         console.log(obj3.firstName)
 
+        let row = 1;
+        function enterData(){
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let age = document.getElementById('age').value;
+
+            let display =  document.getElementById('display');
+
+            let newRow = display.insertRow(row);
+            let cel1 = newRow.insertCell(0);
+            let cel2 = newRow.insertCell(1);
+            let cel3 = newRow.insertCell(2);
+
+            cel1 = name;
+            cel2 = email;
+            cel3 = age;
+
+            row++;
+        }
+
 
     </script>
     
