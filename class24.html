@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Hello World : <span id="newId"></span></h1>
+    <!-- <button onclick="sampleGenPrint()">Generate</button> -->
+
+    <script>
+        // function fact(x){
+        //     if (x===0){
+        //         return 1;
+        //     }
+        //     else{
+        //         return x * fact(x-1);
+        //     }
+        // }
+        // let num = -5
+        // if (num>0){
+        //     let res = fact(num)
+        //     console.log(res)
+        // }else{
+        //     console.log("Enter Positive Number")
+        // }
+        // console.log("Generators")
+        // function* sampleGen(){
+        //     console.log("Welcome")
+        //     let i = 0;
+        //     // while(true){
+        //     //     i++;
+        //     //     yield i;
+
+        //     // }
+        //     let a = 1;
+
+        //     yield a.toString();
+        //     // yield 2;
+        //     // yield 3;
+        // }
+        // let a = sampleGen();
+        // function sampleGenPrint(){
+        //     // document.getElementById('newId').innerText = a.next().value
+        //     console.log(a.next().value)
+
+        // }
+        
+        // console.log(a.value)
+        // console.log(a.next())
+        // console.log(a.next())
+        // console.log(a.next())
+        // console.log(a.next())
+
+        // function myFun(){
+        //     return 1;
+        // }
+        
+        // let myFun2 = function(){
+        //     return 1;
+        // }
+        
+
+        // when we call parent class properties then this function used to direct access properties from the parent
+        // let myFun3=()=>{
+        //     return 1;
+        // }
+            // let add = (...args)=>{
+            //     let sum = 0;
+            //     for (let i of args){
+            //         sum+=i;
+            //     }
+            //     return sum
+            // }
+            // console.log(add(3,5, 7, 7, 89,));
+            // let dataArr = [20, 10, 30, 21];
+
+            // let newData = dataArr.map(function(item){
+            //     return item*2
+            // })
+            // let newData = dataArr.map((item)=>item*2)
+            // console.log(newData)
+
+            // dataArr.forEach(value,index, array)
+            function Person(name, age){
+                this.name = name;
+                this.age = age;
+                this.printDetails = function(){
+                    return this.name +" and age is "+ this.age;
+                }
+            }
+            let obj1 = new Person("Ali", 24);
+            let obj2 = new Person("Bilal", 27);
+            console.log(obj2.printDetails())
+
+
+            let item = {
+                name:"ali",
+                getName: function(){
+                    console.warn("Normal Function", this)
+                },
+                getNameArrow:()=>{
+                    console.warn("Arrow Function", this)
+                }
+            }
+
+            // item.getName();
+            // item.getNameArrow();
+
+            
+        
+
+
+
+
+    </script>
+</body>
+</html>

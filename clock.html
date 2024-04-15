@@ -7,11 +7,11 @@
     <title>Digital Clock</title>
     <style>
         body{
-            background-color: rgb(1, 10, 48);
+            /* background-color: rgb(1, 10, 48); */
         }
         .clock{
             position: absolute;
-            color: white;
+            /* color: white; */
             top: 50%;
             left: 50%;
             font-size: 50px;
@@ -29,14 +29,14 @@
             let h = date.getHours();
             let m = date.getMinutes();
             let s = date.getSeconds();
-            let session = "PM"
+            let session = "AM"
 
             if (h == 0) {
                 h = 12
             }
             if (h > 12) {
                 h = h - 12;
-                session = "AM"
+                session = "PM"
             }
 
             h = (h < 10) ? "0" + h : h;
