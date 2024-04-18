@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Multi Dimensional Arrays</h1>
+    <script>
+        // let x =[
+        //     ["Ali", 24],
+        //     ["Bilal", 20],
+        //     ["Anmol", 30]
+        // ]
+        // let std1 = ["Ali", 24]
+        // let std2 = ["Bilal", 20]
+        // let std3 = ["Anmol", 30]
+
+        // let studs = [std1, std2, std3]
+
+        // // console.log()
+        // for(let r=0; r<studs.length;r++){
+        //     // console.log(i)
+        //     for(let c=0;c<studs.length;c++){
+        //         console.log(studs[r][c])
+        //     }
+        // }
+
+        // Find Difference in multiple arrays
+        function diffNumber(arr1, arr2){
+            let temp = [];
+            arr1 = arr1.toString().split(",").map(Number);
+            arr2 = arr2.toString().split(",").map(Number);
+            for (let i in arr1){
+                if (arr2.indexOf(arr1[i] === -1)){
+                    temp.push(arr1[i]);
+                }
+            }
+            for (let i in arr2){
+                if (arr1.indexOf(arr2[i] === -1)){
+                    temp.push(arr2[i]);
+                }
+            }
+            return temp;
+        }
+        let a1 = [5,6,7,3,2]
+        let a2 =[5,6,4,3,9]
+        diffNumber(a1,a2)
+    </script>
+</body>
+</html>
