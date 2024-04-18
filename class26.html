@@ -33,12 +33,12 @@
             arr1 = arr1.toString().split(",").map(Number);
             arr2 = arr2.toString().split(",").map(Number);
             for (let i in arr1){
-                if (arr2.indexOf(arr1[i] === -1)){
+                if ((arr2.indexOf(arr1[i]) === -1)){
                     temp.push(arr1[i]);
                 }
             }
             for (let i in arr2){
-                if (arr1.indexOf(arr2[i] === -1)){
+                if ((arr1.indexOf(arr2[i]) === -1)){
                     temp.push(arr2[i]);
                 }
             }
@@ -46,7 +46,7 @@
         }
         let a1 = [5,6,7,3,2]
         let a2 =[5,6,4,3,9]
-        diffNumber(a1,a2)
+        console.log(diffNumber(a1,a2))
     </script>
 </body>
 </html>
