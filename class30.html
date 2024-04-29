@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;margin: 0;
+            background-color: #c5cacc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .tab-container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            padding: 0 0.85em 0.85em;
+            border-radius: 0 0 20px 20px;
+            height: 8em;
+            width: 30em;
+            overflow: hidden;
+            background-color: #032146;
+        }
+        .tab-button{
+            all: unset;
+            border: none;
+            padding: 0.8em;
+            background: none;
+            flex-grow: 1;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: transform 0.5s ease-in-out;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .tab-button::after{
+            content: attr(data-text);
+            font-size: .9em;
+            pointer-events: none;
+            transition: opacity .3s ease-in-out;
+            opacity: 0;
+
+        }
+        .tab-button.active::after{
+            padding-left: .5em;
+            opacity: 1;
+            pointer-events: all;
+        }
+        .indicator{
+            position: absolute;
+            width: 6.5em;
+            height: 3.5em;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #fff;
+            left: 0;
+            transform: translateX(0);
+            transition: transform 0.5s;
+            border-radius: 13px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- <h1>Browser Object Model</h1> -->
+<!-- <a href="class11.html">Other Page Data</a>
+<p id="test"></p>
+<input type="button" onclick="pre()" value="Previous">
+<input type="button" onclick="next()" value="Next"> -->
+<!-- <p id="test"></p>
+<button onclick="setTimeout(myFun, 5000)">Click</button> -->
+<div class="tab-container">
+    <div class="indicator"></div>
+    <button class="tab-button active" data-text="Home"><i class="fa-solid fa-house"></i></button>
+    <button class="tab-button" data-text="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button class="tab-button" data-text="Message"><i class="fa-solid fa-envelope"></i></button>
+    <button class="tab-button" data-text="Profile"><i class="fa-solid fa-user"></i></button>
+</div>
+
+<h1 class="head">Hello</h1>
+<h1 class="head">Hello</h1>
+<h1 class="head">Hello</h1>
+
+
+
+<script>
+    let a = document.querySelectorAll(".head")
+    // a[1].style.color = "red"
+    for (let i =0; i<a.length; i++){
+        a[i].style.color = "red"
+    }
+// document.querySelector("#test").innerHTML = window.location.assign
+// function pre(){
+//     window.history.back();
+// }
+
+
+// function next(){
+//     window.history.forward();
+// }
+// document.querySelector("#test").innerHTML = navigator.appVersion
+// setInterval(myFun, 1000)
+// function myFun(){
+//     const x = new Date();
+//     document.querySelector("#test").innerHTML = x.toLocaleTimeString()
+// }
+// function myFun(){
+//     alert("Hello")
+// }
+
+let items = document.querySelectorAll(".tab-button")
+
+</script>
+    
+</body>
+</html>
