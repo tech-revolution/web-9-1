@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Prototypes in JS</h1>
+
+    <script>
+        // let arr = ["Ali", "Asad", "Bilal"]
+        // let str = "Hell       "
+        // let str1 = "World       "
+        // console.log(str.trim().length)
+        // console.log(arr)
+        // Object.prototype.exactlength = function(){
+        //     console.log(`The Exact Length is : ${this.length}`)
+        // }
+        // arr.exactlength()
+        // console.log(arr)
+        // str.exactlength()
+        // str1.exactlength()
+
+        console.log("Promises in JS")
+
+        // fetch("https://api.publicapis.org/entries").then().catch().finally()
+        // Pending
+        // Fulfilled
+        // Reject
+        // const promisOne = new Promise(function(resolve, reject){
+        //     setTimeout(function(){
+        //         console.log("Hello World")
+        //         resolve()
+        //     }, 2000)
+        // })
+
+        // promisOne.then(function(){
+        //     console.log("Executed")
+        // })
+
+        const promisTwo = new Promise(function(resolve, reject){
+            setTimeout(function(){
+                let error = false
+                if(!error){
+                    resolve({username:'ali', password:'123'})
+                }
+                else{
+                    reject("Error: Something Went Wrong")
+                }
+            }, 2000)
+        })
+        promisTwo.then((user)=>{
+            // console.log(user)
+            return user.username
+        }).then((username)=>{
+            console.log(username)
+        }).catch(function(error){
+            console.log(error)
+        }).finally(()=> console.log("The Final Code Executed"))
+
+
+    </script>
+</body>
+</html>
